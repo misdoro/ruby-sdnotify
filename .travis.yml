@@ -12,10 +12,6 @@ rvm:
 jobs:
   allow_failures:
     - rvm: ruby-head
-    
-before_script:
-  - gem install bundler
-  - bundle install
   
 sript:
   - ruby -Ilib:test test/*
